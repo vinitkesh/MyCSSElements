@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VINIT</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <h2>Progess bar on Scroll</h2>
+        <p>Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meowMeow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow</p>
+        <h2><a href="">Progess bar on Scroll</a>.</h2>
+        <p>Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meowMeow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow</p>
+        
+        <h2><a href="">Progess bar on Scroll</a>...</h2>
+        <p>Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meowMeow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow</p>
+        
+        <h2><a href="">Progess bar on Scroll</a>..</h2>
+        <p>Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meowMeow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow</p>
+        
+        <h2><a href="">Progess bar on Scroll</a>....</h2>
+        <p>Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meowMeow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow</p>
+        
+        <h2><a href="">Progess bar on Scroll</a>.</h2>
+        <p>Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meowMeow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow Meow meow meowsies meow</p>
+        
+    </section>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+</body>
+</html>
