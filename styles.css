@@ -1,5 +1,4 @@
 * {
-    overflow: hidden;
     margin: 0;
     padding: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -17,10 +16,7 @@ section{
     padding: 50px;
     background: black;
     display: flex;
-    flex-direction: column;
-
-    
-
+    flex-direction: column; 
 }
 section h2{
   font-size: 3rem;
@@ -32,7 +28,7 @@ section p{
     color: white;
 }
 ::webkit ::-webkit-scrollbar{
-    width: 0px;
+    display: none;
 }
 
 #scrollPath{
